@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.examplemobileappcompany.projectprep4thread.MainActivity">
+
+    <TextView
+        android:id="@+id/eventBusTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Original Text for Event Bus"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:id="@+id/runOnUiTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Original Text for runOnUIThread"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:id="@+id/handlerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Original Text for Handler"
+        android:layout_marginBottom="30dp"/>
+
+
+
+    <Button
+        android:id="@+id/threadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Use Thread Class"
+        android:onClick="startThreadClass"/>
+
+
+    <Button
+        android:id="@+id/runnableButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Use Runnable Interface"
+        android:onClick="startRunnable"/>
+
+    <Button
+        android:id="@+id/asyncTaskButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Use Async Task"
+        android:onClick="startAsyncTask"/>
+
+
+    <Button
+        android:id="@+id/intentServiceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Use Intent Service"
+        android:onClick="startIntentService"/>
+
+</LinearLayout>
